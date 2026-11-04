@@ -173,3 +173,28 @@ footer {
     justify-content: center;
   }
 }
+/* --- 1. Navbar Links Hover Effect --- */
+.navbar-right a {
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.navbar-right a:hover {
+  background-color: rgba(255, 182, 193, 0.3); /* Creates a soft colored highlight underneath the text */
+  color: #ff4081; /* Optional: makes the text pop with color */
+}
+
+/* --- 2. Project Boxes Hover Effect --- */
+.resource-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.resource-card:hover {
+  background-color: rgba(240, 248, 255, 0.6); /* A soft subtle color layer under the entire box */
+  box-shadow: 0 8px 20px rgba(135, 206, 250, 0.3); /* Gives it a soft colored glow/shadow underneath */
+  transform: translateY(-4px); /* Slightly lifts the box up when you hover */
+}
