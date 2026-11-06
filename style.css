@@ -292,4 +292,35 @@ footer.resource-card p {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
-
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.project iframe {
+  width: 100%;
+  height: 650px;
+  min-height: 650px;
+  display: block;
+  border: 1px solid var(--lav-200);
+  border-radius: 12px;
+  background: var(--lav-050);
+}
+.reflection h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--lav-800);
+}
+.reflection p {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+.reflection strong { color: var(--lav-800); }
+@media (max-width: 760px) {
+  .project iframe {
+    height: 480px;
+    min-height: 480px;
+  }
+}
