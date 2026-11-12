@@ -324,3 +324,52 @@ footer.resource-card p {
     min-height: 480px;
   }
 }
+/* ---------- Certificates ---------- */
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.picture {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: var(--paper);
+  border: 2px solid var(--lav-200);
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+  transition: border-color var(--ease), box-shadow var(--ease);
+}
+
+.picture-size {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  display: block;
+}
+
+section a:hover .picture {
+  border-color: var(--lav-500);
+  box-shadow: var(--shadow-lift);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 760px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .picture {
+    max-width: 100%;
+  }
+}
